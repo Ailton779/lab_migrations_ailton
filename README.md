@@ -1,58 +1,59 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Lab Migrations Laravel
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**Aluno:** José Ailton  
+**Disciplina:** Programação Web I  
+**Professor:** Renato William R. de Souza  
+**Semestre:** 2026.1  
 
-## About Laravel
+## Como executar
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+git clone https://github.com/Ailton779/lab_migrations_ailton.git
+cd lab_migrations_ailton
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Atividades
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+| Atividade | Branch | Status |
+|-----------|--------|--------|
+| Atividade 1 — Preparação do Ambiente | atividade/01-ambiente | Concluída |
+| Atividade 2 — Primeira Migration | atividade/02-primeira-migration | Concluída |
+| Atividade 3 — Tipos de Dados | atividade/03-tipos-de-dados | Concluída |
+| Atividade 4 — Chave Estrangeira Simples | atividade/04-chave-estrangeira | Concluída |
+| Atividade 5 — Uso do foreignId | atividade/05-foreignid | Concluída |
+| Atividade 6 — Regras de Exclusão | atividade/06-regras-exclusao | Concluída |
+| Atividade 7 — Alteração de Tabela | atividade/07-alteracao-tabela | Concluída |
+| Atividade 8 — Status das Migrations | atividade/08-status-migrations | Concluída |
+| Atividade 9 — Relacionamento 1:N | atividade/09-relacionamento-1n | Concluída |
+| Atividade 10 — Diagnóstico de Erros | atividade/10-diagnostico-erros | Concluída |
+| Prática 1 — Sistema de Biblioteca | pratica/01-biblioteca | Concluída |
+| Prática 2 — Sistema Acadêmico | pratica/02-sistema-academico | Concluída |
+| Prática Avançada — Gestão de Projetos | pratica/03-gestao-projetos | Concluída |
 
-## Learning Laravel
+## Saída do migrate:status
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
-
-## Agentic Development
-
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
-
-```bash
-composer require laravel/boost --dev
-
-php artisan boost:install
-```
-
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+| Batch | Migration | Status |
+|-------|-----------|--------|
+| 1 | 0001_01_01_000000_create_users_table | Ran |
+| 1 | 0001_01_01_000001_create_cache_table | Ran |
+| 1 | 0001_01_01_000002_create_jobs_table | Ran |
+| 1 | create_clientes_table | Ran |
+| 1 | create_produtos_table | Ran |
+| 1 | create_categorias_table | Ran |
+| 1 | create_produtos_com_categoria_table | Ran |
+| 1 | refactor_produtos_use_foreignid | Ran |
+| 1 | create_produtos_v3_com_cascade | Ran |
+| 1 | create_pedidos_table | Ran |
+| 1 | create_itens_pedido_table | Ran |
+| 2 | create_pedidos_items_corrigida | Ran |
+| 3 | create_autores_table | Ran |
+| 3 | create_livros_table | Ran |
+| 4 | create_cursos_table | Ran |
+| 4 | create_alunos_table | Ran |
+| 4 | create_matriculas_table | Ran |
+| 5 | create_colaboradores_table | Ran |
+| 5 | create_projetos_table | Ran |
+| 5 | create_projeto_colaborador_table | Ran |
+| 5 | create_tarefas_table | Ran |
+| 5 | add_prioridade_to_tarefas_table | Ran |
